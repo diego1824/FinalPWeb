@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<!-- Diego Aparecido de Almeida Pinto -->
+<!-- 0030481421017 -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:form>
+		<p:panelMenu>
+		    <p:submenu label="#{msg['pages.comuns.menuLateral.inicio']}" >
+			   <p:menuitem value="#{msg['pages.inicio.menu']}" url="inicio.xhtml" />
+			</p:submenu>
+		
+			<p:submenu label="#{msg['pages.comuns.menuLateral.gerencial']}">
+				<p:menuitem value="#{msg['pages.cadastroCliente.menu']}"     url="clientes.xhtml" />
+				<p:menuitem value="#{msg['pages.cadastroPedido.menu']}" url="pedidos.xhtml" />
+				<p:menuitem value="#{msg['pages.cadastroProduto.menu']}" url="produtos.xhtml" />
+				<p:menuitem value="#{msg['pages.cadastroVendedor.menu']}" url="vendedores.xhtml" />
+	       </p:submenu>
+					
+			<p:submenu label="#{msg['pages.comuns.menuLateral.options']}">
+				<p:menuitem value="#{msg['pages.linguagem.menu']}" url="linguagem.xhtml" />
+	       </p:submenu>
+		
+		</p:panelMenu>
+	</h:form>
+</ui:composition>
 
-</body>
-</html>
